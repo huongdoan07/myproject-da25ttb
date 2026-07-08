@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký</title>
+    <link rel="stylesheet" href="../css/dangky.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Đăng ký</h2>
+        
+        <form action="#">
+            <div class="form-group">
+                <label for="fullname">Họ Và Tên:</label>
+                <input type="text" id="fullname">
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Ngày Tháng Năm Sinh:</label>
+                <input type="date" id="dob">
+            </div>
+
+            <div class="form-group">
+                <label for="class">Lớp:</label>
+                <input type="text" id="class">
+            </div>
+
+            <div class="form-group">
+                <label for="studentid">Mã số sinh viên:</label>
+                <input type="text" id="studentid">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Số Điện Thoại:</label>
+                <input type="tel" id="phone">
+            </div>
+
+            <div class="form-group-inline">
+                <label>Giới Tính:</label>
+                <label class="normal-label"><input type="radio" name="gender" value="nam"> Nam</label>
+                <label class="normal-label"><input type="radio" name="gender" value="nu"> Nữ</label>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Địa Chỉ:</label>
+                <input type="text" id="address">
+            </div>
+
+            <div class="form-group">
+                <label for="avatar">Ảnh đại diện:</label>
+                <input type="file" id="avatar">
+            </div>
+
+            <div class="form-group-inline">
+                <label>Sở Thích:</label>
+                <label class="normal-label"><input type="checkbox" value="cau-long"> Cầu lông</label>
+                <label class="normal-label"><input type="checkbox" value="am-nhac"> Âm nhạc</label>
+                <label class="normal-label"><input type="checkbox" value="du-lich"> Du lịch</label>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Mật Khẩu:</label>
+                <input type="password" id="password">
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="btn-login">login</button>
+                <button type="button" class="btn-cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

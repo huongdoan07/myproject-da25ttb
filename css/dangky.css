@@ -1,0 +1,85 @@
+/* Thiết lập font chữ và nền cho trang đăng ký */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 20px;
+    color: #000;
+}
+
+.form-container {
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Định dạng các dòng nhập liệu */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* Căn đều độ rộng của tiêu đề chữ để các ô input thẳng hàng */
+.form-group label {
+    font-size: 18px;
+    font-weight: bold;
+    width: 200px; 
+    flex-shrink: 0;
+}
+
+/* Định dạng các ô nhập dữ liệu */
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="password"] {
+    width: 250px;
+    padding: 3px 5px;
+    font-size: 16px;
+    border: 1px solid #767676;
+    border-radius: 2px;
+}
+
+/* Hàng Giới tính và Sở thích */
+.form-group-inline {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.form-group-inline label {
+    font-size: 18px;
+    font-weight: bold;
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.form-group-inline .normal-label {
+    font-weight: normal;
+    font-size: 16px;
+    width: auto;
+    margin-right: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Các nút bấm */
+.btn-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-group button {
+    padding: 2px 10px;
+    font-size: 14px;
+    background-color: #efefef;
+    border: 1px solid #767676;
+    border-radius: 3px;
+    cursor: pointer;
+}
