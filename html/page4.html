@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Hóa đơn mua hàng</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/page4.css">
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Tên hàng</th>
+            <th>Số lượng</th>
+            <th>Đơn giá</th>
+            <th>ĐVT</th>
+            <th>Thành tiền</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td class="tenhang">Bánh tráng trộn</td>
+            <td class="soluong">3</td>
+            <td class="dongia">15000</td>
+            <td>Phần</td>
+            <td class="thanhtien"></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td class="tenhang">Cá viên chiên</td>
+            <td class="soluong">4</td>
+            <td class="dongia">20000</td>
+            <td>Phần</td>
+            <td class="thanhtien"></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td class="tenhang">Nem chua rán</td>
+            <td class="soluong">10</td>
+            <td class="dongia">7000</td>
+            <td>Cái</td>
+            <td class="thanhtien"></td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td class="tenhang">Xoài lắc</td>
+            <td class="soluong">2</td>
+            <td class="dongia">20000</td>
+            <td>Ly</td>
+            <td class="thanhtien"></td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td class="tenhang">Bánh mì nướng muối ớt</td>
+            <td class="soluong">3</td>
+            <td class="dongia">18000</td>
+            <td>Cái</td>
+            <td class="thanhtien"></td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td class="tenhang">Súp cua</td>
+            <td class="soluong">4</td>
+            <td class="dongia">15000</td>
+            <td>Chén</td>
+            <td class="thanhtien"></td>
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td class="tenhang">Bắp xào bơ</td>
+            <td class="soluong">2</td>
+            <td class="dongia">18000</td>
+            <td>Hộp</td>
+            <td class="thanhtien"></td>
+        </tr>
+
+        <tr>
+            <td>8</td>
+            <td class="tenhang">Khô gà lá chanh</td>
+            <td class="soluong">2</td>
+            <td class="dongia">35000</td>
+            <td>Hũ</td>
+            <td class="thanhtien"></td>
+        </tr>
+
+        <tr>
+            <td>9</td>
+            <td class="tenhang">Khoai tây chiên lắc phô mai</td>
+            <td class="soluong">3</td>
+            <td class="dongia">25000</td>
+            <td>Phần</td>
+            <td class="thanhtien"></td>
+        </tr>
+
+        <tr>
+            <td>10</td>
+            <td class="tenhang">Trà sữa</td>
+            <td class="soluong">5</td>
+            <td class="dongia">25000</td>
+            <td>Ly</td>
+            <td class="thanhtien"></td>
+        </tr>
+
+        <tr>
+            <td colspan="5">Tổng thanh toán</td>
+            <td id="tongthanhtoan"></td>
+        </tr>
+    </table>
+
+    <script>
+        const sl = document.getElementsByClassName("soluong");
+        const dg = document.getElementsByClassName("dongia");
+        const tt = document.getElementsByClassName("thanhtien");
+
+        let tongthanhtoan = 0;
+
+        for (let i = 0; i < sl.length; i++) {
+            let thanhtien = parseInt(sl[i].innerText) * parseInt(dg[i].innerText);
+            tt[i].innerText = thanhtien.toLocaleString("vi-VN");
+            tongthanhtoan += thanhtien;
+        }
+
+        document.getElementById("tongthanhtoan").innerText =
+            tongthanhtoan.toLocaleString("vi-VN");
+    </script>
+
+</body>
+</html>
