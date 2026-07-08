@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính diện tích hình chữ nhật</title>
+    <link rel="stylesheet" href="../css/page3.css"
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>TÍNH DIỆN TÍCH HÌNH CHỮ NHẬT</h1>
+        <p>Nhập chiều dài và chiều rộng trong hộp thoại để tính diện tích.</p>
+    </div>
+
+    <script>
+        // Nhập chiều dài
+        let d = Number(prompt("Nhập vào chiều dài: "));
+        let r;
+
+        do {
+            r = Number(prompt("Nhập vào chiều rộng: "));
+            if (r > d) {
+                alert("Chiều rộng không được lớn hơn chiều dài. Vui lòng nhập lại!");
+            }
+        } while (r > d);
+
+        if (r == d) {
+            alert(`TRƯỜNG HỢP ĐẶC BIỆT\nDiện tích hình vuông cạnh ${d} cm là ${d * r} cm²`);
+        } else {
+            alert(`Diện tích hình chữ nhật có chiều dài ${d} cm và chiều rộng ${r} cm là ${d * r} cm²`);
+        }
+    </script>
+
+</body>
+
+</html>
