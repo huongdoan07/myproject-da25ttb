@@ -1,0 +1,90 @@
+/* 1. Thiết lập font chữ và căn lề cơ bản cho toàn trang */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    color: #333;
+    background-color: #f9f9f9; /* Màu nền xám nhạt cho dịu mắt */
+}
+
+/* Tiêu đề chính */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 30px;
+    border-bottom: 1px solid #ccc; /* Đường gạch chân dưới mỗi mục lớn */
+    padding-bottom: 5px;
+}
+
+/* 2. CSS vùng Giới thiệu bản thân (Chia đôi: Ảnh trái, Chữ phải) */
+.gioithieu {
+    display: flex;       /* Kích hoạt flexbox để đẩy ảnh và chữ nằm ngang */
+    align-items: flex-start;
+    border: 1px solid #999; /* Khung viền bao quanh toàn bộ phần giới thiệu */
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Khung chứa ảnh */
+.gioithieu img {
+    width: 150px;        /* Độ rộng của ảnh đại diện */
+    height: auto;
+    border-right: 1px solid #999; /* Đường vạch ngăn cách giữa ảnh và chữ */
+    display: block;
+}
+
+/* Khung chứa chữ bên phải ảnh */
+.gioithieu .noidung {
+    padding: 15px;
+    flex: 1;             /* Chiếm toàn bộ phần khoảng trống còn lại */
+}
+
+.gioithieu .noidung h2 {
+    margin-top: 0;       /* Xóa khoảng cách phía trên tiêu đề nhỏ */
+    border-bottom: none; /* Bỏ gạch chân riêng ở mục này cho giống mẫu */
+    padding-bottom: 0;
+}
+
+/* 3. Định dạng Bảng thông tin chi tiết */
+table {
+    border-collapse: collapse; /* Gộp viền bảng lại thành nét đơn giống mẫu */
+    width: 350px;              /* Độ rộng vừa phải cho bảng */
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+table, th, td {
+    border: 1px solid #333;    /* Viền đen cho bảng giống trong ảnh */
+}
+
+th, td {
+    padding: 8px 12px;         /* Tạo khoảng cách bên trong các ô */
+    text-align: left;          /* Căn lề trái cho chữ */
+}
+
+th {
+    background-color: #eee;    /* Đổ màu nền xám nhạt cho thanh tiêu đề bảng */
+}
+
+/* 4. Định dạng các danh sách sở thích, món ăn */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* 5. Định dạng link liên hệ */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Gạch chân khi di chuột vào link */
+}
