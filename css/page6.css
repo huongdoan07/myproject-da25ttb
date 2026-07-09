@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #fdfbf7 0%, #f5ece1 100%);
+    color: #433422;
+    padding: 50px 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+#container-product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 35px;
+    padding: 20px;
+}
+
+.product-item {
+    background: #ffffff;
+    border: 1px solid rgba(215, 194, 171, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(184, 161, 136, 0.15);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.product-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(141, 110, 89, 0.25);
+    border-color: #d4a373;
+}
+
+.product-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.product-item:hover img {
+    transform: scale(1.06);
+}
+
+.product-info {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: linear-gradient(to bottom, #ffffff 0%, #fffcf9 100%);
+    border-top: 1px solid rgba(215, 194, 171, 0.2);
+}
+
+.product-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #5c4033;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    height: 56px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.product-price {
+    font-size: 22px;
+    font-weight: 800;
+    color: #e05a47;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.5px;
+}
+
+.product-desc {
+    font-size: 14.5px;
+    color: #706253;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.product-link {
+    display: block;
+    text-align: center;
+    background: linear-gradient(135deg, #e78895 0%, #e05a47 100%);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(224, 90, 71, 0.2);
+    transition: all 0.3s ease;
+}
+
+.product-link:hover {
+    background: linear-gradient(135deg, #e05a47 0%, #bc3e2d 100%);
+    box-shadow: 0 6px 20px rgba(224, 90, 71, 0.4);
+}
